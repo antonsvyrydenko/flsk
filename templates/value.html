@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+   
+	<p> You said:</p>
+	
+	<ul>
+	  {% for item in data %}
+		<li> {{item}}</li>
+	  {% endfor %}
+	</ul>
+	
+	<a href='/'>HOME</a>
+	
+	<form name=c action='/clean' method=post>
+		<input type=submit name=cln value=clean>
+	</form>
+	
+</body>
+
+</html>
